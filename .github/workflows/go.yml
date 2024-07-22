@@ -24,7 +24,7 @@ jobs:
       run: |
         go mod download
     - name: Build
-      run: go build -v ./cmd/sso/main.go --config=./config/local.yaml
+      run: go build -v ./cmd/sso/main.go
 
     - name: Test
       run: go test -v ./tests
