@@ -28,7 +28,7 @@ jobs:
 
     - name: Start the server
       run: |
-        ./server &
+        ./server --config=./config/local.yaml  &
         sleep 5
 
     - name: Test
